@@ -1,0 +1,9 @@
+metric,historical_final,current_optimized,delta,evidence_type
+lut,3151.0,3164.0,13.0,vivado_report
+ff,3515.0,3557.0,42.0,vivado_report
+bram_tiles,6.5,10.0,3.5,vivado_report
+dsp,10.0,12.0,2.0,vivado_report
+wns_ns,1.113,0.23,-0.883,vivado_report
+tns_ns,0.0,0.0,0.0,vivado_report
+whs_ns,0.034,0.045,0.011,vivado_report
+ths_ns,0.0,0.0,0.0,vivado_report

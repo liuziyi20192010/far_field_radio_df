@@ -1,0 +1,2 @@
+ARTIFACTS_PASS: immutable manifest and configurable HWH contract checked
+PINMAP_PASS: 50 ports, identical original pins/IOSTANDARD, no collisions

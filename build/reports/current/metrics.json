@@ -1,0 +1,16 @@
+{
+  "wns_ns": 0.23,
+  "tns_ns": 0.0,
+  "whs_ns": 0.045,
+  "ths_ns": 0.0,
+  "lut": 3164.0,
+  "ff": 3557.0,
+  "bram_tiles": 10.0,
+  "dsp": 12.0,
+  "internal_timing_passed": true,
+  "external_io_signoff": "not_established_by_this_report",
+  "source_reports": [
+    "timing_summary.rpt",
+    "utilization.rpt"
+  ]
+}

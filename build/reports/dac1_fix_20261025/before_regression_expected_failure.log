@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 25 16:51:31 2026
+# Process ID: 40496
+# Current directory: E:/PYNQ/fpgachina/tmp/dac_netlist_diagnosis
+# Command line: xsim.exe -log old_regression.log -mode tcl -source {xsim.dir/dac_old_regression/xsim_script.tcl}
+# Log file: E:/PYNQ/fpgachina/tmp/dac_netlist_diagnosis/old_regression.log
+# Journal file: E:/PYNQ/fpgachina/tmp/dac_netlist_diagnosis\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/dac_old_regression/xsim_script.tcl
+# xsim {dac_old_regression} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+Fatal: DAC implemented amplitude failure phase=0 gain=128 CH1=0.000000 CH2=255.419617 expected=255.500000
+Time: 762 ns  Iteration: 0  Process: /tb_dac_implemented/check_setting  Scope: tb_dac_implemented.check_setting  File: E:/PYNQ/fpgachina/far_field_radio_df/sim/tb_dac_implemented.sv Line: 66
+$finish called at time : 762 ns
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 25 16:51:34 2026...

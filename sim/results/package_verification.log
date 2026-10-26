@@ -1,0 +1,4 @@
+ARTIFACTS_PASS: immutable manifest and configurable HWH contract checked
+ENGINEERING_PACKAGE_PASS: names, paired artifacts, actual build/simulation markers, manifest
+COMPETITION_PENDING: board_evidence_complete, optimization_baseline_complete, third_party_redistribution_resolved, public_repository_published
+STRICT_PENDING_DETECTION_PASS: exit=2 as expected

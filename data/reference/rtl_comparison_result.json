@@ -1,0 +1,9 @@
+{
+  "count": 11,
+  "nonfinite_count": 0,
+  "max_abs_error": 0.23613699999998516,
+  "rmse": 0.1237806317570775,
+  "tolerance": 0.35,
+  "circular_degrees": true,
+  "passed": true
+}

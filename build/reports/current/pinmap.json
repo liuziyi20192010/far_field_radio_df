@@ -1,0 +1,202 @@
+{
+  "sys_clk": {
+    "PACKAGE_PIN": "U18",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "sys_rst_n": {
+    "PACKAGE_PIN": "N16",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_1[0]": {
+    "PACKAGE_PIN": "V15",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_1[1]": {
+    "PACKAGE_PIN": "W15",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_1[2]": {
+    "PACKAGE_PIN": "W14",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_1[3]": {
+    "PACKAGE_PIN": "Y14",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_1[4]": {
+    "PACKAGE_PIN": "V12",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_1[5]": {
+    "PACKAGE_PIN": "W13",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_1[6]": {
+    "PACKAGE_PIN": "U14",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_1[7]": {
+    "PACKAGE_PIN": "U15",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_1[8]": {
+    "PACKAGE_PIN": "V13",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_1[9]": {
+    "PACKAGE_PIN": "U13",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_otr_1": {
+    "PACKAGE_PIN": "Y11",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_clk_1": {
+    "PACKAGE_PIN": "Y13",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_oe_1": {
+    "PACKAGE_PIN": "W11",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_2[0]": {
+    "PACKAGE_PIN": "V11",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_2[2]": {
+    "PACKAGE_PIN": "W10",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_2[4]": {
+    "PACKAGE_PIN": "Y9",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_2[6]": {
+    "PACKAGE_PIN": "Y7",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_2[8]": {
+    "PACKAGE_PIN": "W6",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_otr_2": {
+    "PACKAGE_PIN": "U10",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_clk_2": {
+    "PACKAGE_PIN": "U9",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_2[1]": {
+    "PACKAGE_PIN": "V10",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_2[3]": {
+    "PACKAGE_PIN": "W9",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_2[5]": {
+    "PACKAGE_PIN": "Y8",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_2[7]": {
+    "PACKAGE_PIN": "Y6",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_data_2[9]": {
+    "PACKAGE_PIN": "V6",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "ad_oe_2": {
+    "PACKAGE_PIN": "T9",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_1[9]": {
+    "PACKAGE_PIN": "T14",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_1[8]": {
+    "PACKAGE_PIN": "T15",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_1[7]": {
+    "PACKAGE_PIN": "Y17",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_1[6]": {
+    "PACKAGE_PIN": "Y16",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_1[5]": {
+    "PACKAGE_PIN": "T16",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_1[4]": {
+    "PACKAGE_PIN": "U17",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_1[3]": {
+    "PACKAGE_PIN": "V17",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_1[2]": {
+    "PACKAGE_PIN": "V18",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_1[1]": {
+    "PACKAGE_PIN": "T17",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_1[0]": {
+    "PACKAGE_PIN": "R18",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_clk_1": {
+    "IOSTANDARD": "LVCMOS33",
+    "PACKAGE_PIN": "W16"
+  },
+  "da_data_2[9]": {
+    "PACKAGE_PIN": "W18",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_2[8]": {
+    "PACKAGE_PIN": "W19",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_2[7]": {
+    "PACKAGE_PIN": "R16",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_2[6]": {
+    "PACKAGE_PIN": "R17",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_2[5]": {
+    "PACKAGE_PIN": "W20",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_2[4]": {
+    "PACKAGE_PIN": "V20",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_2[3]": {
+    "PACKAGE_PIN": "P18",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_2[2]": {
+    "PACKAGE_PIN": "N17",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_2[1]": {
+    "PACKAGE_PIN": "P19",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_data_2[0]": {
+    "PACKAGE_PIN": "N18",
+    "IOSTANDARD": "LVCMOS33"
+  },
+  "da_clk_2": {
+    "IOSTANDARD": "LVCMOS33",
+    "PACKAGE_PIN": "P16"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "evidence_type": "offline_host_mock_widgets",
+  "physical_dma_used": false,
+  "real_widget_comm_or_browser_used": false,
+  "simulated_frames": 60,
+  "simulated_phase_rate_hz": 20,
+  "decode_median_ms": {
+    "baseline": 0.10585000018181745,
+    "optimized": 0.05249999958323315
+  },
+  "render_preparation_median_ms": {
+    "baseline": 1.2162000002717832,
+    "optimized": 0.06650000068475492
+  },
+  "changed_html_bytes": {
+    "baseline": 846405,
+    "optimized": 56369
+  },
+  "limitations": "Timing depends on this desktop. Payload counts exclude widget protocol headers. Optimized render preparation includes its throttled FFT. No board FPS or analog accuracy claim follows from these results."
+}

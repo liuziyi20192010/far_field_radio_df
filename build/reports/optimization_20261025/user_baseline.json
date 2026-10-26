@@ -1,0 +1,40 @@
+{
+  "evidence_type": "user_reported_panel_ranges",
+  "date": "2026-10-25",
+  "gain": 0.5,
+  "zero_calibrated": true,
+  "fps": 5.9,
+  "capture_compute_ms": 60,
+  "cordic_minus_software_displayed_deg": 0,
+  "otr": false,
+  "ranges": [
+    {
+      "setting_deg": 0,
+      "phase_min_deg": -0.1,
+      "phase_max_deg": 0.01,
+      "amplitude_codes": [
+        113.3,
+        98.7
+      ]
+    },
+    {
+      "setting_deg": -45,
+      "phase_min_deg": -45.64,
+      "phase_max_deg": -45.55,
+      "amplitude_codes": [
+        113.3,
+        100.5
+      ]
+    },
+    {
+      "setting_deg": 45,
+      "phase_min_deg": 44.96,
+      "phase_max_deg": 45.01,
+      "amplitude_codes": [
+        113.3,
+        100.3
+      ]
+    }
+  ],
+  "limitations": "Panel ranges supplied by user; no raw capture files, statistical mean or standard deviation available."
+}

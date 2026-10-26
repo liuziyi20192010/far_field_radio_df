@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Sep 26 23:38:48 2026
+# Process ID: 45880
+# Current directory: E:/PYNQ/fpgachina/phase_measure
+# Command line: vivado.exe -mode batch -source scripts\check_dac_iob.tcl -nojournal -log build_logs\check_dac_iob.log
+# Log file: E:/PYNQ/fpgachina/phase_measure/build_logs/check_dac_iob.log
+# Journal file: 
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2020.2/scripts/Vivado_init.tcl'
+SynthPilot Server: Port 9999 busy, using port 10000 instead
+SynthPilot Server: Ready on port 10000
+source {scripts\check_dac_iob.tcl}
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# open_checkpoint [file join $root vivado phase_measure phase_measure.runs impl_1 system_wrapper_routed.dcp]
+Command: open_checkpoint E:/PYNQ/fpgachina/phase_measure/vivado/phase_measure/phase_measure.runs/impl_1/system_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1137.883 ; gain = 0.000
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.179 . Memory (MB): peak = 1137.883 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 269 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1548.609 ; gain = 3.941
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1548.609 ; gain = 3.941
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1548.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766
+open_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1548.609 ; gain = 410.727
+# set cells [get_cells -hier -filter {NAME =~ *dac_control_0*da_data*reg*}]
+# if {[llength $cells] != 20} {error "Expected 20 DAC output registers, found [llength $cells]"}
+# foreach cell $cells {
+#     set loc [get_property LOC $cell]
+#     if {![string match OLOGIC* $loc]} {error "$cell is not in OLOGIC: $loc"}
+# }
+# puts "DAC_IOB_PASS: 20 output registers placed in OLOGIC"
+DAC_IOB_PASS: 20 output registers placed in OLOGIC
+# close_design
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 26 23:39:26 2026...

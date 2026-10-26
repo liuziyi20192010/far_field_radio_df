@@ -1,0 +1,15 @@
+{
+  "group": "junior",
+  "board_model": "alientek_navigator_zynq7020",
+  "board_model_source": "user_confirmation_2026_10_11",
+  "part": "xc7z020clg400-2",
+  "part_source": "create_project_tcl_and_vivado_reports",
+  "pynq_image": "ZYNQ-7020-2.7.0.img",
+  "image_source": "user_confirmation_2026_10_11",
+  "pynq_runtime_version_verified_on_board": false,
+  "vivado": "2020.2",
+  "adc_chip_model": null,
+  "dac_chip_model": null,
+  "physical_board_measurement_files_available": false,
+  "qualitative_board_feedback_available": true
+}

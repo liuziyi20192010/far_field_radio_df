@@ -1,0 +1,179 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 25 16:53:09 2026
+# Process ID: 12252
+# Current directory: E:/PYNQ/fpgachina/far_field_radio_df/build/work
+# Command line: vivado.exe -mode batch -source E:/PYNQ/fpgachina/far_field_radio_df/build/scripts/check_dac_implemented.tcl -log E:/PYNQ/fpgachina/far_field_radio_df/build/reports/current/check_dac_implemented.log -journal E:/PYNQ/fpgachina/far_field_radio_df/build/work/check_dac_implemented.jou
+# Log file: E:/PYNQ/fpgachina/far_field_radio_df/build/reports/current/check_dac_implemented.log
+# Journal file: E:/PYNQ/fpgachina/far_field_radio_df/build/work/check_dac_implemented.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2020.2/scripts/Vivado_init.tcl'
+SynthPilot Server: Ready on port 9999
+source E:/PYNQ/fpgachina/far_field_radio_df/build/scripts/check_dac_implemented.tcl
+# set root [file normalize [file join [file dirname [info script]] .. ..]]
+# set work [file join $root build work logs implemented_dac]
+# file mkdir $work
+# set checkpoint [file join $root build work vivado phase_measure phase_measure.runs impl_1 system_wrapper_routed.dcp]
+# open_checkpoint $checkpoint
+Command: open_checkpoint E:/PYNQ/fpgachina/far_field_radio_df/build/work/vivado/phase_measure/phase_measure.runs/impl_1/system_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1135.418 ; gain = 0.000
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1135.418 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 275 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.434 . Memory (MB): peak = 1560.574 ; gain = 6.102
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.435 . Memory (MB): peak = 1560.574 ; gain = 6.102
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1560.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766
+open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1560.574 ; gain = 425.156
+# set dac [get_cells -hier -filter {NAME == system_i/dac_control_0/inst}]
+# if {[llength $dac] != 1} {error "Expected exactly one implemented DAC cell"}
+# set netlist [file join $work dac_routed_funcsim.v]
+# write_verilog -force -mode funcsim -cell $dac $netlist
+# set fh [open $netlist r];
+# set text [read $fh];
+# close $fh
+# if {![regexp {module[ \t\r\n]+([A-Za-z_][A-Za-z0-9_]*)[ \t\r\n]*\(} $text match exported_top]} {
+#     error "Cannot identify exported DAC netlist module"
+# }
+# close_design
+# catch {close_project}
+# set wrapper [file join $work implemented_dac.v]
+# set fh [open $wrapper w]
+# puts $fh "module implemented_dac(input clk,resetn,input \[20:0\] config_async,output ack,output \[9:0\] da_data_1,da_data_2,output da_clk_1,da_clk_2);"
+# puts $fh "$exported_top impl(.clk(clk),.resetn(resetn),.config_async(config_async),.ack(ack),.da_data_1(da_data_1),.da_data_2(da_data_2),.da_clk_1(da_clk_1),.da_clk_2(da_clk_2));"
+# puts $fh "endmodule"
+# close $fh
+# create_project -force dac_implemented_sim [file join $work project] -part xc7z020clg400-2
+# add_files [list $netlist $wrapper]
+# add_files -fileset sim_1 [file join $root sim tb_dac_implemented.sv]
+# set_property top tb_dac_implemented [get_filesets sim_1]
+# set_property xsim.simulate.runtime 0ns [get_filesets sim_1]
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/implemented_dac/project/dac_implemented_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dac_implemented' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/implemented_dac/project/dac_implemented_sim.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_dac_implemented_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/implemented_dac/dac_routed_funcsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_dac_control_0_0_dac_control
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/implemented_dac/implemented_dac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module implemented_dac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/PYNQ/fpgachina/far_field_radio_df/sim/tb_dac_implemented.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_dac_implemented
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/implemented_dac/project/dac_implemented_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/implemented_dac/project/dac_implemented_sim.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/implemented_dac/project/dac_implemented_sim.sim/sim_1/behav/xsim'
+"xelab -wto 373ebfe687dd483cacb5840b04c04e6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_dac_implemented_behav xil_defaultlib.tb_dac_implemented xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 373ebfe687dd483cacb5840b04c04e6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_dac_implemented_behav xil_defaultlib.tb_dac_implemented xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(RDADDR_COLLIS...
+Compiling module unisims_ver.RAMB36E1(INIT_00=256'b1110011011...
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(RDADDR_COLLIS...
+Compiling module unisims_ver.RAMB36E1(INIT_00=256'b1101101110...
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(RDADDR_COLLIS...
+Compiling module unisims_ver.RAMB36E1(INIT_00=256'b1001100110...
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(RDADDR_COLLIS...
+Compiling module unisims_ver.RAMB36E1(INIT_01=256'b0100010001...
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.ODDR(DDR_CLK_EDGE="SAME_EDGE")
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.system_dac_control_0_0_dac_contr...
+Compiling module xil_defaultlib.implemented_dac
+Compiling module xil_defaultlib.tb_dac_implemented
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_dac_implemented_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/implemented_dac/project/dac_implemented_sim.sim/sim_1/behav/xsim/xsim.dir/tb_dac_implemented_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 25 16:53:34 2026...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1560.574 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/implemented_dac/project/dac_implemented_sim.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_dac_implemented_behav -key {Behavioral:sim_1:Functional:tb_dac_implemented} -tclbatch {tb_dac_implemented.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_dac_implemented.tcl
+## current_wave_config
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_dac_implemented_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1560.574 ; gain = 0.000
+# run all
+DAC_IMPLEMENTED_CASE phase_code=0 gain=128 CH1_amp=255.419617 CH2_amp=255.419617 phase_error=0.000000
+DAC_IMPLEMENTED_CASE phase_code=128 gain=128 CH1_amp=255.419617 CH2_amp=255.581422 phase_error=0.004372
+DAC_IMPLEMENTED_CASE phase_code=896 gain=128 CH1_amp=255.419617 CH2_amp=255.581422 phase_error=-0.004372
+DAC_IMPLEMENTED_CASE phase_code=256 gain=128 CH1_amp=255.419617 CH2_amp=255.903088 phase_error=-0.000000
+DAC_IMPLEMENTED_CASE phase_code=17 gain=64 CH1_amp=127.329386 CH2_amp=127.755836 phase_error=-0.143174
+DAC_IMPLEMENTED_CASE phase_code=735 gain=192 CH1_amp=382.749003 CH2_amp=382.915008 phase_error=0.010524
+DAC_IMPLEMENTED_CASE phase_code=128 gain=128 enabled=0 midscale_ok
+DAC_IMPLEMENTED_CASE phase_code=896 gain=128 CH1_amp=255.419617 CH2_amp=255.581422 phase_error=-0.004372
+DAC_IMPLEMENTED_CASE phase_code=0 gain=0 enabled=1 midscale_ok
+DAC_IMPLEMENTED_CASE phase_code=0 gain=128 CH1_amp=255.419617 CH2_amp=255.419617 phase_error=0.000000
+DAC_IMPLEMENTED_PASS: 10 routed-netlist waveform/configuration cases, both data paths and forwarded clocks
+$finish called at time : 3642 ns : File "E:/PYNQ/fpgachina/far_field_radio_df/sim/tb_dac_implemented.sv" Line 102
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+# set simlog [file join $work project dac_implemented_sim.sim sim_1 behav xsim simulate.log]
+# set fh [open $simlog r];
+# set result [read $fh];
+# close $fh
+# if {![regexp -line {^DAC_IMPLEMENTED_PASS:} $result]} {
+#     error "Routed DAC simulation did not pass; refusing to approve this hardware export"
+# }
+# close_project
+# puts "DAC_IMPLEMENTED_PASS: routed DAC primitive simulation verified"
+DAC_IMPLEMENTED_PASS: routed DAC primitive simulation verified
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 25 16:53:38 2026...

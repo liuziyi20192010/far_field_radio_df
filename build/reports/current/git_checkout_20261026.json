@@ -1,0 +1,17 @@
+{
+  "type": "local_git_byte_round_trip",
+  "network_used": false,
+  "core_autocrlf_values": [
+    "true",
+    "false"
+  ],
+  "files_sha256": {
+    ".gitattributes": "9d25c779ae1d14e1692d6ada1d8dd73728ff3fd8063ca56e2e676ed664f5b3a1",
+    "crlf.txt": "f8e0f1568dd9254c3262d199d5dcfc9ff6d4855e18ec53a7176f9eab948ed93e",
+    "lf.txt": "dbea9325179efe46ea2add94f7b6b745ca983fabb208dc6d34aa064623d7ee23",
+    "board/app/overlay/far_field_radio_df.bit": "a39ae8f72cb3f3d6ce5f8182bf7d9661616db95cbe020932db435275a3b9df4c",
+    "src/rtl/dac_control.v": "613204a6d61bfce50597c1bda1bd9186a0f717bd1d1abfb22a510ab071f7511d"
+  },
+  "status": "pass",
+  "temporary_directory_retained_for_inspection": "git_byte_audit_pveqv1ix"
+}

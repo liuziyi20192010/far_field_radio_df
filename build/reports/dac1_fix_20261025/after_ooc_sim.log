@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 25 16:52:24 2026
+# Process ID: 46720
+# Current directory: E:/PYNQ/fpgachina/tmp/dac_netlist_diagnosis
+# Command line: xsim.exe -log fixed_ooc_regression.log -mode tcl -source {xsim.dir/dac_fixed_ooc/xsim_script.tcl}
+# Log file: E:/PYNQ/fpgachina/tmp/dac_netlist_diagnosis/fixed_ooc_regression.log
+# Journal file: E:/PYNQ/fpgachina/tmp/dac_netlist_diagnosis\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/dac_fixed_ooc/xsim_script.tcl
+# xsim {dac_fixed_ooc} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+DAC_IMPLEMENTED_CASE phase_code=0 gain=128 CH1_amp=255.419617 CH2_amp=255.419617 phase_error=0.000000
+DAC_IMPLEMENTED_CASE phase_code=128 gain=128 CH1_amp=255.419617 CH2_amp=255.581422 phase_error=0.004372
+DAC_IMPLEMENTED_CASE phase_code=896 gain=128 CH1_amp=255.419617 CH2_amp=255.581422 phase_error=-0.004372
+DAC_IMPLEMENTED_CASE phase_code=256 gain=128 CH1_amp=255.419617 CH2_amp=255.903088 phase_error=-0.000000
+DAC_IMPLEMENTED_CASE phase_code=17 gain=64 CH1_amp=127.329386 CH2_amp=127.755836 phase_error=-0.143174
+DAC_IMPLEMENTED_CASE phase_code=735 gain=192 CH1_amp=382.749003 CH2_amp=382.915008 phase_error=0.010524
+DAC_IMPLEMENTED_CASE phase_code=128 gain=128 enabled=0 midscale_ok
+DAC_IMPLEMENTED_CASE phase_code=896 gain=128 CH1_amp=255.419617 CH2_amp=255.581422 phase_error=-0.004372
+DAC_IMPLEMENTED_CASE phase_code=0 gain=0 enabled=1 midscale_ok
+DAC_IMPLEMENTED_CASE phase_code=0 gain=128 CH1_amp=255.419617 CH2_amp=255.419617 phase_error=0.000000
+DAC_IMPLEMENTED_PASS: 10 routed-netlist waveform/configuration cases, both data paths and forwarded clocks
+$finish called at time : 3642 ns : File "E:/PYNQ/fpgachina/far_field_radio_df/sim/tb_dac_implemented.sv" Line 102
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 25 16:52:27 2026...

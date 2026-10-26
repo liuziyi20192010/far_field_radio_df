@@ -1,0 +1,249 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 25 16:48:43 2026
+# Process ID: 40984
+# Current directory: E:/PYNQ/fpgachina/far_field_radio_df/build/work
+# Command line: vivado.exe -mode batch -source E:\PYNQ\fpgachina\far_field_radio_df\build\scripts\simulate.tcl -log E:\PYNQ\fpgachina\far_field_radio_df\build\reports\current\simulate.log -journal E:\PYNQ\fpgachina\far_field_radio_df\build\work\simulate.jou
+# Log file: E:/PYNQ/fpgachina/far_field_radio_df/build/reports/current/simulate.log
+# Journal file: E:\PYNQ\fpgachina\far_field_radio_df\build\work\simulate.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2020.2/scripts/Vivado_init.tcl'
+SynthPilot Server: Ready on port 9999
+source {E:\PYNQ\fpgachina\far_field_radio_df\build\scripts\simulate.tcl}
+# set root [file normalize [file join [file dirname [info script]] .. ..]]
+# create_project -force phase_rtl_sim [file join $root build work logs rtl_sim] -part xc7z020clg400-2
+# add_files [glob [file join $root src rtl *.v]]
+# add_files [glob [file join $root src rtl *.mem]]
+# add_files -fileset sim_1 [glob [file join $root sim *.sv]]
+# set_property top tb_phase_measure [get_filesets sim_1]
+# set_property xsim.simulate.runtime 0ns [get_filesets sim_1]
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_phase_measure' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim/sine_1024.mem'
+INFO: [SIM-utils-43] Exported 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim/sine_5120_q6.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_phase_measure_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PYNQ/fpgachina/far_field_radio_df/src/rtl/adc_capture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adc_capture
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PYNQ/fpgachina/far_field_radio_df/src/rtl/cordic_phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic_phase
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/PYNQ/fpgachina/far_field_radio_df/sim/tb_phase_measure.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_phase_measure
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+"xelab -wto ffec20de917f4c7fb04014252a42ba82 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_phase_measure_behav xil_defaultlib.tb_phase_measure xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ffec20de917f4c7fb04014252a42ba82 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_phase_measure_behav xil_defaultlib.tb_phase_measure xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cordic_phase
+Compiling module xil_defaultlib.adc_capture_default
+Compiling module xil_defaultlib.tb_phase_measure
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_phase_measure_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim/xsim.dir/tb_phase_measure_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 25 16:48:55 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_phase_measure_behav -key {Behavioral:sim_1:Functional:tb_phase_measure} -tclbatch {tb_phase_measure.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_phase_measure.tcl
+## current_wave_config
+WARNING: [Wavedata 42-489] Can't add object "/tb_phase_measure/received" to the wave window because it has 131584 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_phase_measure/expected" to the wave window because it has 131072 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_phase_measure_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1137.500 ; gain = 0.000
+# run all
+FRAME_PASS phase=0.000000 measured=0.028136 mode=0
+FRAME_PASS phase=30.000000 measured=30.098568 mode=0
+FRAME_PASS phase=-45.000000 measured=-44.796481 mode=0
+FRAME_PASS phase=90.000000 measured=90.028136 mode=0
+FRAME_PASS phase=-90.000000 measured=-89.971864 mode=2
+FRAME_PASS phase=179.000000 measured=179.098491 mode=0
+FRAME_PASS phase=-179.000000 measured=-178.914240 mode=2
+FRAME_PASS phase=180.000000 measured=-179.971864 mode=0
+FRAME_PASS phase=45.000000 measured=45.203519 mode=1
+FRAME_PASS phase=0.000000 measured=0.000000 mode=0
+FRAME_PASS phase=-30.000000 measured=-29.763863 mode=0
+PHASE_RTL_PASS
+$finish called at time : 2188320 ns : File "E:/PYNQ/fpgachina/far_field_radio_df/sim/tb_phase_measure.sv" Line 93
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+# set_property top tb_dac_control [get_filesets sim_1]
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dac_control' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim/sine_1024.mem'
+INFO: [SIM-utils-43] Exported 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim/sine_5120_q6.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_dac_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/PYNQ/fpgachina/far_field_radio_df/src/rtl/dac_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dac_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/PYNQ/fpgachina/far_field_radio_df/sim/tb_dac_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_dac_control
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+"xelab -wto ffec20de917f4c7fb04014252a42ba82 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_dac_control_behav xil_defaultlib.tb_dac_control xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ffec20de917f4c7fb04014252a42ba82 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_dac_control_behav xil_defaultlib.tb_dac_control xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.ODDR(DDR_CLK_EDGE="SAME_EDGE")
+Compiling module xil_defaultlib.dac_control
+Compiling module xil_defaultlib.tb_dac_control
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_dac_control_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim/xsim.dir/tb_dac_control_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 25 16:49:02 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_dac_control_behav -key {Behavioral:sim_1:Functional:tb_dac_control} -tclbatch {tb_dac_control.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_dac_control.tcl
+## current_wave_config
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_dac_control_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1137.500 ; gain = 0.000
+# run all
+DAC_PASS offset=256 gain=128 enabled=1
+DAC_PASS offset=0 gain=256 enabled=1
+DAC_PASS offset=85 gain=256 enabled=1
+DAC_PRECISION target=315.000000 actual=-45.004372 error=-0.004372 gain=128
+DAC_PASS offset=896 gain=128 enabled=1
+DAC_PASS offset=512 gain=64 enabled=1
+DAC_PASS offset=1023 gain=256 enabled=1
+DAC_PASS offset=17 gain=64 enabled=1
+DAC_PASS offset=735 gain=192 enabled=1
+DAC_PASS offset=341 gain=96 enabled=1
+DAC_PRECISION target=45.000000 actual=45.004372 error=0.004372 gain=128
+DAC_PASS offset=128 gain=128 enabled=1
+DAC_PRECISION target=315.000000 actual=-45.004372 error=-0.004372 gain=128
+DAC_PASS offset=896 gain=128 enabled=1
+DAC_PASS offset=17 gain=32 enabled=1
+DAC_PASS offset=0 gain=128 enabled=1
+DAC_PRECISION target=45.000000 actual=45.004372 error=0.004372 gain=128
+DAC_PASS offset=128 gain=128 enabled=1
+DAC_PASS offset=256 gain=128 enabled=1
+DAC_PASS offset=384 gain=128 enabled=1
+DAC_PASS offset=512 gain=128 enabled=1
+DAC_PASS offset=640 gain=128 enabled=1
+DAC_PASS offset=768 gain=128 enabled=1
+DAC_PRECISION target=315.000000 actual=-45.004372 error=-0.004372 gain=128
+DAC_PASS offset=896 gain=128 enabled=1
+DAC_PASS offset=256 gain=0 enabled=1
+DAC_PASS offset=256 gain=256 enabled=0
+DAC_RTL_PASS: 1024 phase codes at gain=0.5, configuration transitions and low-gain boundary
+$finish called at time : 498976 ns : File "E:/PYNQ/fpgachina/far_field_radio_df/sim/tb_dac_control.sv" Line 117
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+# set_property top tb_cordic_phase [get_filesets sim_1]
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cordic_phase' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim/sine_1024.mem'
+INFO: [SIM-utils-43] Exported 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim/sine_5120_q6.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_cordic_phase_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/PYNQ/fpgachina/far_field_radio_df/sim/tb_cordic_phase.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cordic_phase
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+"xelab -wto ffec20de917f4c7fb04014252a42ba82 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_cordic_phase_behav xil_defaultlib.tb_cordic_phase xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ffec20de917f4c7fb04014252a42ba82 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_cordic_phase_behav xil_defaultlib.tb_cordic_phase xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cordic_phase
+Compiling module xil_defaultlib.tb_cordic_phase
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_cordic_phase_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim/xsim.dir/tb_cordic_phase_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 25 16:49:10 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PYNQ/fpgachina/far_field_radio_df/build/work/logs/rtl_sim/phase_rtl_sim.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cordic_phase_behav -key {Behavioral:sim_1:Functional:tb_cordic_phase} -tclbatch {tb_cordic_phase.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_cordic_phase.tcl
+## current_wave_config
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cordic_phase_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1137.500 ; gain = 0.000
+# run all
+CORDIC_EXHAUSTIVE_PASS
+$finish called at time : 1497690 ns : File "E:/PYNQ/fpgachina/far_field_radio_df/sim/tb_cordic_phase.sv" Line 31
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 25 16:49:14 2026...

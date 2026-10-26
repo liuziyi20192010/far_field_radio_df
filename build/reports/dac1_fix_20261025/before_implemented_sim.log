@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 25 16:47:39 2026
+# Process ID: 39920
+# Current directory: E:/PYNQ/fpgachina/tmp/dac_netlist_diagnosis
+# Command line: xsim.exe -mode tcl -source {xsim.dir/dac_diag/xsim_script.tcl}
+# Log file: E:/PYNQ/fpgachina/tmp/dac_netlist_diagnosis/xsim.log
+# Journal file: E:/PYNQ/fpgachina/tmp/dac_netlist_diagnosis\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/dac_diag/xsim_script.tcl
+# xsim {dac_diag} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+SAMPLE phase=0 n=0 routed=512/362 rtl=362/362
+SAMPLE phase=0 n=1 routed=512/269 rtl=269/269
+SAMPLE phase=0 n=2 routed=512/269 rtl=269/269
+SAMPLE phase=0 n=3 routed=512/362 rtl=362/362
+SAMPLE phase=0 n=4 routed=512/512 rtl=512/512
+SAMPLE phase=0 n=5 routed=512/662 rtl=662/662
+SAMPLE phase=0 n=6 routed=512/755 rtl=755/755
+SAMPLE phase=0 n=7 routed=512/755 rtl=755/755
+SAMPLE phase=0 n=8 routed=512/662 rtl=662/662
+SAMPLE phase=0 n=9 routed=512/512 rtl=512/512
+NETLIST_RESULT phase=0 gain=128 routed_ch1_minmax=512/512 routed_ch2_minmax=269/755 rtl_ch1_minmax=269/755 mismatches=24
+SAMPLE phase=128 n=0 routed=512/260 rtl=362/260
+SAMPLE phase=128 n=1 routed=512/284 rtl=269/284
+SAMPLE phase=128 n=2 routed=512/396 rtl=269/396
+SAMPLE phase=128 n=3 routed=512/552 rtl=362/552
+SAMPLE phase=128 n=4 routed=512/693 rtl=512/693
+SAMPLE phase=128 n=5 routed=512/764 rtl=662/764
+SAMPLE phase=128 n=6 routed=512/740 rtl=755/740
+SAMPLE phase=128 n=7 routed=512/628 rtl=755/628
+SAMPLE phase=128 n=8 routed=512/472 rtl=662/472
+SAMPLE phase=128 n=9 routed=512/331 rtl=512/331
+NETLIST_RESULT phase=128 gain=128 routed_ch1_minmax=512/512 routed_ch2_minmax=260/764 rtl_ch1_minmax=269/755 mismatches=24
+SAMPLE phase=896 n=0 routed=512/552 rtl=362/552
+SAMPLE phase=896 n=1 routed=512/396 rtl=269/396
+SAMPLE phase=896 n=2 routed=512/284 rtl=269/284
+SAMPLE phase=896 n=3 routed=512/260 rtl=362/260
+SAMPLE phase=896 n=4 routed=512/331 rtl=512/331
+SAMPLE phase=896 n=5 routed=512/472 rtl=662/472
+SAMPLE phase=896 n=6 routed=512/628 rtl=755/628
+SAMPLE phase=896 n=7 routed=512/740 rtl=755/740
+SAMPLE phase=896 n=8 routed=512/764 rtl=662/764
+SAMPLE phase=896 n=9 routed=512/693 rtl=512/693
+NETLIST_RESULT phase=896 gain=128 routed_ch1_minmax=512/512 routed_ch2_minmax=260/764 rtl_ch1_minmax=269/755 mismatches=24
+NETLIST_DIAG_COMPLETE
+$finish called at time : 2113 ns : File "E:/PYNQ/fpgachina/tmp/dac_netlist_diagnosis/tb_dac_netlist.sv" Line 30
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 25 16:47:43 2026...

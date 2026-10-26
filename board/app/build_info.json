@@ -1,0 +1,25 @@
+{
+  "hardware_version": "2026_10_25_dac1_reference_fix",
+  "project_name": "远场模拟无线电实时测向系统",
+  "metadata_recorded_utc": "2026-10-25T08:54:34.574328+00:00",
+  "bit_sha256": "a39ae8f72cb3f3d6ce5f8182bf7d9661616db95cbe020932db435275a3b9df4c",
+  "hardware_sources": {
+    "src/rtl/adc_capture.v": "3cfb306dfde6c4a16ae54d8d099720bd5bb2c15752b6630fc1d64f0c1e6559aa",
+    "src/rtl/adc_status_sync.v": "1a7fab847a5051a155830b0b63a309979bf63d2b7d3802d99daf1d671e74a9a4",
+    "src/rtl/cordic_phase.v": "66f5e2625f26447974e0a55d0831162312af6388f82ee6259549a64a22465ff9",
+    "src/rtl/dac_ack_sync.v": "45abe0dbfe30e1817c6bc7ae7011cd7912158cd4b4fa29f04453557e278bb7fd",
+    "src/rtl/dac_control.v": "613204a6d61bfce50597c1bda1bd9186a0f717bd1d1abfb22a510ab071f7511d",
+    "src/rtl/sine_1024.mem": "999047ca8b2fe04573a5da2fbe7c08bccab9b84412fa213f720e9288f8c8392b",
+    "src/rtl/sine_5120_q6.mem": "d84ed7a73e6657b7036a75d5fdbef56ac1fb8c5d1a56c05780dd5d495bf869da",
+    "src/constraints/phase_measure.xdc": "6425a7e1d668d8acce822c28e58ad18971500d8ad8a4e33d0cdc6f697811804c"
+  },
+  "wns_ns": 0.23,
+  "tns_ns": 0.0,
+  "whs_ns": 0.045,
+  "ths_ns": 0.0,
+  "board_test_status": "pending",
+  "lut": 3164.0,
+  "ff": 3557.0,
+  "bram_tiles": 10.0,
+  "dsp": 12.0
+}

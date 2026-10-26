@@ -1,0 +1,15 @@
+test_corrupt_frame (__main__.Tests.test_corrupt_frame) ... ok
+test_dac_handshake (__main__.Tests.test_dac_handshake) ... ok
+test_decode_all_quadrants_and_encoding (__main__.Tests.test_decode_all_quadrants_and_encoding) ... ok
+test_error_recovery_memory_ownership (__main__.Tests.test_error_recovery_memory_ownership) ... ok
+test_invalid_signals (__main__.Tests.test_invalid_signals) ... ok
+test_notebook_code_compiles (__main__.Tests.test_notebook_code_compiles) ... ok
+test_repeat_dma_order_and_free (__main__.Tests.test_repeat_dma_order_and_free) ... ok
+test_spectrum_scale_peak (__main__.Tests.test_spectrum_scale_peak) ... ok
+test_timeout_short_frame_and_keyboardinterrupt (__main__.Tests.test_timeout_short_frame_and_keyboardinterrupt) ... ok
+test_validation_and_calibration (__main__.Tests.test_validation_and_calibration) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.168s
+
+OK

@@ -1,0 +1,6 @@
+{
+  "first_user_message_prefix": "目前项目已经能够测量两路信号相位差",
+  "scope": "only_this_conversation",
+  "selected_by_user_on": "2026-10-26",
+  "exclude_internal_reasoning_and_tool_arguments": true
+}

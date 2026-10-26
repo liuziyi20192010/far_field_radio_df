@@ -1,0 +1,184 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Sep 26 22:12:18 2026
+# Process ID: 38424
+# Current directory: E:/PYNQ/fpgachina
+# Command line: vivado.exe -mode batch -source E:/PYNQ/fpgachina/phase_measure/scripts/create_project.tcl -log E:/PYNQ/fpgachina/phase_measure/build_logs/create.log -journal E:/PYNQ/fpgachina/phase_measure/build_logs/create.jou
+# Log file: E:/PYNQ/fpgachina/phase_measure/build_logs/create.log
+# Journal file: E:/PYNQ/fpgachina/phase_measure/build_logs/create.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2020.2/scripts/Vivado_init.tcl'
+SynthPilot Server: Port 9999 busy, using port 10000 instead
+SynthPilot Server: Ready on port 10000
+source E:/PYNQ/fpgachina/phase_measure/scripts/create_project.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# set proj [file join $root vivado phase_measure phase_measure.xpr]
+# if {[file exists $proj]} {error "Project already exists: $proj. Open it or run build.tcl; do not overwrite it."}
+# create_project phase_measure [file dirname $proj] -part xc7z020clg400-2
+# set_property target_language Verilog [current_project]
+# add_files -norecurse [glob [file join $root rtl *.v]]
+# add_files -norecurse [file join $root rtl sine_1024.mem]
+# add_files -fileset constrs_1 -norecurse [file join $root constraints phase_measure.xdc]
+# update_compile_order -fileset sources_1
+# set fh [open [file join $root scripts base_system_bd.tcl] r]
+# set base [read $fh];
+# close $fh
+# set base [string map [list {  validate_bd_design} {  # validated by create_project.tcl} \
+#     {CONFIG.C_GPIO_WIDTH {2}} {CONFIG.C_GPIO_WIDTH {3}} \
+#     {CONFIG.c_sg_length_width {14}} {CONFIG.c_sg_length_width {20}}] $base]
+# eval $base
+INFO: [BD::TCL 103-2003] Currently there is no design <system> in project, so creating one...
+Wrote  : <E:\PYNQ\fpgachina\phase_measure\vivado\phase_measure\phase_measure.srcs\sources_1\bd\system\system.bd> 
+INFO: [BD::TCL 103-2004] Making design <system> as current_bd_design.
+INFO: [BD::TCL 103-2005] Currently the variable <design_name> is equal to "system".
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:clk_wiz:6.0 xilinx.com:ip:axi_dma:7.1 xilinx.com:ip:axi_gpio:2.0 xilinx.com:ip:axi_intc:4.1 xilinx.com:ip:axis_data_fifo:2.0 xilinx.com:ip:xlconstant:1.1 xilinx.com:ip:processing_system7:5.5 xilinx.com:ip:util_vector_logic:2.0 xilinx.com:ip:proc_sys_reset:5.0 xilinx.com:ip:xlconcat:2.1  .
+INFO: [BD::TCL 103-2020] Checking if the following modules exist in the project's sources:  
+adc_capture adc_status_sync  .
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'wr_index' has a dependency on the module local parameter or undefined parameter 'AW'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rd_index' has a dependency on the module local parameter or undefined parameter 'AW'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'adc_clk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'adc_clk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'adc_resetn' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'adc_resetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'adc_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'adc_resetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'adc_clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'adc_resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'resetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_0/gpio2_io_i> is being overridden by the user with net <adc_status_sync_0_status_sync>. This pin will not be connected as a part of interface connection <GPIO2>.
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_0/gpio_io_o> is being overridden by the user with net <axi_gpio_0_gpio_io_o>. This pin will not be connected as a part of interface connection <GPIO>.
+WARNING: [BD 41-1306] The connection to interface pin </axi_intc_0/irq> is being overridden by the user with net <axi_intc_0_irq>. This pin will not be connected as a part of interface connection <interrupt>.
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0x0000_0000 [ 1G ]>.
+Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4040_0000 [ 64K ]>.
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4120_0000 [ 64K ]>.
+Slave segment '/axi_intc_0/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4180_0000 [ 64K ]>.
+Wrote  : <E:\PYNQ\fpgachina\phase_measure\vivado\phase_measure\phase_measure.srcs\sources_1\bd\system\system.bd> 
+# set_property CONFIG.NUM_MI 4 [get_bd_cells ps7_0_axi_periph]
+# create_bd_port -dir I -from 9 -to 0 ad_data_2
+# create_bd_port -dir I ad_otr_2
+# create_bd_port -dir O ad_clk_2
+# create_bd_port -dir O ad_oe_2
+# connect_bd_net [get_bd_ports ad_data_2] [get_bd_pins adc_capture_0/ad_data_2]
+# connect_bd_net [get_bd_ports ad_otr_2] [get_bd_pins adc_capture_0/ad_otr_2]
+# connect_bd_net [get_bd_pins adc_clk_wiz/clk_out1] [get_bd_ports ad_clk_2]
+# connect_bd_net [get_bd_pins const_zero/dout] [get_bd_ports ad_oe_2]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 dac_clk_wiz
+# set_property -dict [list CONFIG.PRIM_IN_FREQ 50 CONFIG.CLKOUT1_REQUESTED_OUT_FREQ 125 \
+#     CONFIG.USE_LOCKED true CONFIG.USE_RESET true CONFIG.RESET_TYPE ACTIVE_LOW] [get_bd_cells dac_clk_wiz]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_dac
+# create_bd_cell -type module -reference dac_control dac_control_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'resetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+# create_bd_cell -type module -reference dac_ack_sync dac_ack_sync_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'resetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 dac_gpio
+# set_property -dict [list CONFIG.C_IS_DUAL 1 CONFIG.C_GPIO_WIDTH 21 CONFIG.C_ALL_OUTPUTS 1 \
+#     CONFIG.C_GPIO2_WIDTH 1 CONFIG.C_ALL_INPUTS_2 1 CONFIG.C_DOUT_DEFAULT 0x00000000] [get_bd_cells dac_gpio]
+# connect_bd_net [get_bd_ports sys_clk] [get_bd_pins dac_clk_wiz/clk_in1]
+# connect_bd_net [get_bd_pins reset_and/Res] [get_bd_pins dac_clk_wiz/resetn] [get_bd_pins rst_dac/ext_reset_in]
+# connect_bd_net [get_bd_pins dac_clk_wiz/locked] [get_bd_pins rst_dac/dcm_locked]
+# connect_bd_net [get_bd_pins dac_clk_wiz/clk_out1] [get_bd_pins rst_dac/slowest_sync_clk] [get_bd_pins dac_control_0/clk]
+# connect_bd_net [get_bd_pins rst_dac/peripheral_aresetn] [get_bd_pins dac_control_0/resetn]
+# connect_bd_net [get_bd_pins dac_gpio/gpio_io_o] [get_bd_pins dac_control_0/config_async]
+WARNING: [BD 41-1306] The connection to interface pin </dac_gpio/gpio_io_o> is being overridden by the user with net <dac_gpio_gpio_io_o>. This pin will not be connected as a part of interface connection <GPIO>.
+# connect_bd_net [get_bd_pins dac_control_0/ack] [get_bd_pins dac_ack_sync_0/ack_async]
+# connect_bd_net [get_bd_pins dac_ack_sync_0/ack_sync] [get_bd_pins dac_gpio/gpio2_io_i]
+WARNING: [BD 41-1306] The connection to interface pin </dac_gpio/gpio2_io_i> is being overridden by the user with net <dac_ack_sync_0_ack_sync>. This pin will not be connected as a part of interface connection <GPIO2>.
+# connect_bd_intf_net [get_bd_intf_pins ps7_0_axi_periph/M03_AXI] [get_bd_intf_pins dac_gpio/S_AXI]
+# connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins dac_gpio/s_axi_aclk] \
+#     [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins dac_ack_sync_0/clk]
+# connect_bd_net [get_bd_pins rst_ps7_0_100M/peripheral_aresetn] [get_bd_pins dac_gpio/s_axi_aresetn] \
+#     [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins dac_ack_sync_0/resetn]
+# foreach ch {1 2} {
+#     create_bd_port -dir O -from 9 -to 0 da_data_$ch
+#     create_bd_port -dir O da_clk_$ch
+#     connect_bd_net [get_bd_ports da_data_$ch] [get_bd_pins dac_control_0/da_data_$ch]
+#     connect_bd_net [get_bd_ports da_clk_$ch] [get_bd_pins dac_control_0/da_clk_$ch]
+# }
+# assign_bd_address -offset 0x41210000 -range 0x00010000 \
+#     -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs dac_gpio/S_AXI/Reg]
+Slave segment '/dac_gpio/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4121_0000 [ 64K ]>.
+# validate_bd_design
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /axi_intc_0: Property SENSITIVITY = "NULL" for interrupt input 0 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /axi_intc_0: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /adc_clk_wiz clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /dac_clk_wiz clk_wiz propagate
+# save_bd_design
+Wrote  : <E:\PYNQ\fpgachina\phase_measure\vivado\phase_measure\phase_measure.srcs\sources_1\bd\system\system.bd> 
+# generate_target all [get_files system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : E:/PYNQ/fpgachina/phase_measure/vivado/phase_measure/phase_measure.gen/sources_1/bd/system/synth/system.v
+VHDL Output written to : E:/PYNQ/fpgachina/phase_measure/vivado/phase_measure/phase_measure.gen/sources_1/bd/system/sim/system.v
+VHDL Output written to : E:/PYNQ/fpgachina/phase_measure/vivado/phase_measure/phase_measure.gen/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc_capture_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc_clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc_status_sync_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block const_zero .
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_and .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_adc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/PYNQ/fpgachina/phase_measure/vivado/phase_measure/phase_measure.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/PYNQ/fpgachina/phase_measure/vivado/phase_measure/phase_measure.gen/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/PYNQ/fpgachina/phase_measure/vivado/phase_measure/phase_measure.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac_clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_dac .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac_control_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac_ack_sync_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac_gpio .
+Exporting to file E:/PYNQ/fpgachina/phase_measure/vivado/phase_measure/phase_measure.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file E:/PYNQ/fpgachina/phase_measure/vivado/phase_measure/phase_measure.gen/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File E:/PYNQ/fpgachina/phase_measure/vivado/phase_measure/phase_measure.gen/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1135.129 ; gain = 0.000
+# add_files -norecurse [make_wrapper -files [get_files system.bd] -top]
+# set_property top system_wrapper [current_fileset]
+# update_compile_order -fileset sources_1
+# write_bd_tcl -force [file join $root scripts phase_measure_bd.tcl]
+INFO: [BD 5-148] Tcl file written out <E:/PYNQ/fpgachina/phase_measure/scripts/phase_measure_bd.tcl>.
+
+# puts "PHASE_PROJECT_PASS"
+PHASE_PROJECT_PASS
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 26 22:12:59 2026...

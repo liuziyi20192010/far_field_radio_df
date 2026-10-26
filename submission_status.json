@@ -1,0 +1,37 @@
+{
+  "project_name": "远场模拟无线电实时测向系统",
+  "repository_name": "far_field_radio_df",
+  "group": "junior",
+  "status": "organized_candidate_pending_board_evidence_and_publication",
+  "board_evidence_complete": false,
+  "optimization_baseline_complete": false,
+  "third_party_redistribution_resolved": false,
+  "public_repository_published": false,
+  "public_repository_url": null,
+  "final_commit": null,
+  "updated_at": "2026-10-26",
+  "authoritative_directory": "far_field_radio_df_board",
+  "delivery_format": "directory",
+  "archive_generation_enabled": false,
+  "latest_user_observation": {
+    "source": "user_report_not_raw_measurement",
+    "coax_connection_corrected": true,
+    "reported_phase_error_range_deg": [
+      -1.0,
+      1.0
+    ],
+    "scope": "not_validated_as_all_phase_dual_mode_or_long_term_accuracy"
+  },
+  "video_recorded": false,
+  "interaction_scope": {
+    "conversation_title_prefix": "目前项目已经能够测量两路信号相位差",
+    "conversation_count": 1,
+    "public_message_count": 19,
+    "selection_file": "build/config/interaction_selection.json"
+  },
+  "privacy_review": {
+    "reviewed_on": "2026-10-26",
+    "report": "report/verification.md",
+    "personal_user_paths_and_hostnames_redacted": true
+  }
+}

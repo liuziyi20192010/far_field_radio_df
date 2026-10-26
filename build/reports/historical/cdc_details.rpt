@@ -1,0 +1,99 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Sep 26 23:38:16 2026
+| Host         : redacted_host running 64-bit major release  (build 9200)
+| Command      : report_cdc -details -file E:/PYNQ/fpgachina/phase_measure/build_logs/cdc_details.rpt
+| Design       : system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+ID     Severity  Count  Description
+-----  --------  -----  ------------------------------------------
+CDC-3  Info         33  1-bit synchronized with ASYNC_REG property
+
+Source Clock: clk_out2_system_adc_clk_wiz_0
+Destination Clock: clk_fpga_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)                                                                                                                    Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  -------------------------------------------------------------------------------------------------------------------------------  ----------------------------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      7  False Path  system_i/adc_capture_0/inst/busy_reg/C                                                                                           system_i/adc_status_sync_0/inst/status_meta_reg[0]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      7  False Path  system_i/adc_capture_0/inst/done_reg/C                                                                                           system_i/adc_status_sync_0/inst/status_meta_reg[1]/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property      7  False Path  system_i/adc_capture_0/inst/otr_any_reg/C                                                                                        system_i/adc_status_sync_0/inst/status_meta_reg[2]/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_wr_rst_ic_reg/C  system_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst/syncstages_ff_reg[0]/D
+
+Source Clock: clk_out3_system_adc_clk_wiz_0
+Destination Clock: clk_fpga_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)                          Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  -------------------------------------  -------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      7  False Path  system_i/dac_control_0/inst/ack_reg/C  system_i/dac_ack_sync_0/inst/ack_meta_reg/D
+
+Source Clock: input port clock
+Destination Clock: clk_fpga_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  -------------  ---------------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      4  False Path  sys_rst_n      system_i/rst_ps7_0_100M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+
+Source Clock: clk_fpga_0
+Destination Clock: clk_out2_system_adc_clk_wiz_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)                                                                                                                    Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  -------------------------------------------------------------------------------------------------------------------------------  ----------------------------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio_Data_Out_reg[2]/C                                                                   system_i/adc_capture_0/inst/ctrl_meta_reg[0]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio_Data_Out_reg[1]/C                                                                   system_i/adc_capture_0/inst/ctrl_meta_reg[1]/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/axi_gpio_0/U0/gpio_core_1/Dual.gpio_Data_Out_reg[0]/C                                                                   system_i/adc_capture_0/inst/ctrl_meta_reg[2]/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg/C  system_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst/syncstages_ff_reg[0]/D
+
+Source Clock: input port clock
+Destination Clock: clk_out2_system_adc_clk_wiz_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  -------------  --------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      4  False Path  sys_rst_n      system_i/rst_adc/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+
+Source Clock: clk_fpga_0
+Destination Clock: clk_out3_system_adc_clk_wiz_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)                                                  Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  -------------------------------------------------------------  -------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[20]/C  system_i/dac_control_0/inst/config_meta_reg[0]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[19]/C  system_i/dac_control_0/inst/config_meta_reg[1]/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[18]/C  system_i/dac_control_0/inst/config_meta_reg[2]/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[17]/C  system_i/dac_control_0/inst/config_meta_reg[3]/D
+  5  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[16]/C  system_i/dac_control_0/inst/config_meta_reg[4]/D
+  6  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[15]/C  system_i/dac_control_0/inst/config_meta_reg[5]/D
+  7  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[14]/C  system_i/dac_control_0/inst/config_meta_reg[6]/D
+  8  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[13]/C  system_i/dac_control_0/inst/config_meta_reg[7]/D
+  9  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[12]/C  system_i/dac_control_0/inst/config_meta_reg[8]/D
+ 10  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[11]/C  system_i/dac_control_0/inst/config_meta_reg[9]/D
+ 11  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[10]/C  system_i/dac_control_0/inst/config_meta_reg[10]/D
+ 12  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[9]/C   system_i/dac_control_0/inst/config_meta_reg[11]/D
+ 13  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[8]/C   system_i/dac_control_0/inst/config_meta_reg[12]/D
+ 14  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[7]/C   system_i/dac_control_0/inst/config_meta_reg[13]/D
+ 15  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[6]/C   system_i/dac_control_0/inst/config_meta_reg[14]/D
+ 16  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[5]/C   system_i/dac_control_0/inst/config_meta_reg[15]/D
+ 17  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[4]/C   system_i/dac_control_0/inst/config_meta_reg[16]/D
+ 18  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[3]/C   system_i/dac_control_0/inst/config_meta_reg[17]/D
+ 19  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[2]/C   system_i/dac_control_0/inst/config_meta_reg[18]/D
+ 20  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[1]/C   system_i/dac_control_0/inst/config_meta_reg[19]/D
+ 21  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/dac_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[0]/C   system_i/dac_control_0/inst/config_meta_reg[20]/D
+
+Source Clock: input port clock
+Destination Clock: clk_out3_system_adc_clk_wiz_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  -------------  --------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      4  False Path  sys_rst_n      system_i/rst_dac/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+

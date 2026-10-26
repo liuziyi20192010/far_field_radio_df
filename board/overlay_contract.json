@@ -1,0 +1,8 @@
+{
+  "ips": {
+    "axi_dma_0": {"parameters": {"C_INCLUDE_SG": "0", "C_INCLUDE_MM2S": "0", "C_SG_LENGTH_WIDTH": "20"}},
+    "axi_gpio_0": {"parameters": {"C_GPIO_WIDTH": "3"}},
+    "dac_gpio": {"parameters": {"C_GPIO_WIDTH": "21"}},
+    "rst_dac": {"parameters": {"C_EXT_RESET_HIGH": "0"}}
+  }
+}

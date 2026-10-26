@@ -1,0 +1,168 @@
+{
+  "evidence_type": "offline_digital_dac_model",
+  "physical_dac_bits": 10,
+  "dac_sample_rate_hz": 125000000,
+  "tone_hz": 12500000,
+  "samples_per_period": 10,
+  "phase_codes_tested_per_gain": 1024,
+  "rom_fractional_bits": 6,
+  "rom_phase_positions": 5120,
+  "rom_physical_depth": 8192,
+  "rom_sha256": "d84ed7a73e6657b7036a75d5fdbef56ac1fb8c5d1a56c05780dd5d495bf869da",
+  "reference": "ideal requested phase; subtract each digital generator zero-phase baseline",
+  "excluded_effects": [
+    "DAC analog response",
+    "reconstruction/anti-alias filters",
+    "ADC sampling and quantization",
+    "board/cable delay",
+    "clock noise"
+  ],
+  "limitations": [
+    "Finite 10-bit output means some low-gain phase errors worsen versus the legacy generator.",
+    "No phase-specific correction fitted to user measurements is applied.",
+    "These are digital fundamental phase errors, not board measurement accuracy."
+  ],
+  "gains": [
+    {
+      "gain_code": 13,
+      "gain": 0.05078125,
+      "legacy": {
+        "max_abs_error_deg": 0.9464623210755292,
+        "rms_error_deg": 0.3594381717658765,
+        "plus_45_error_deg": 0.5276293434591821,
+        "minus_45_error_deg": -0.5276293434591537,
+        "minimum_code": 486,
+        "maximum_code": 537
+      },
+      "exact_phase_q6": {
+        "max_abs_error_deg": 1.0546875000000568,
+        "rms_error_deg": 0.43379276573325953,
+        "plus_45_error_deg": -0.34204287835228797,
+        "minus_45_error_deg": 0.3420428783523448,
+        "minimum_code": 486,
+        "maximum_code": 538
+      }
+    },
+    {
+      "gain_code": 32,
+      "gain": 0.125,
+      "legacy": {
+        "max_abs_error_deg": 0.34360401582728173,
+        "rms_error_deg": 0.11597927672224743,
+        "plus_45_error_deg": 0.24452185295865547,
+        "minus_45_error_deg": -0.2445218529586839,
+        "minimum_code": 448,
+        "maximum_code": 575
+      },
+      "exact_phase_q6": {
+        "max_abs_error_deg": 0.48097558542326624,
+        "rms_error_deg": 0.1664017484432209,
+        "plus_45_error_deg": -0.05910058542332308,
+        "minus_45_error_deg": 0.05910058542326624,
+        "minimum_code": 448,
+        "maximum_code": 576
+      }
+    },
+    {
+      "gain_code": 64,
+      "gain": 0.25,
+      "legacy": {
+        "max_abs_error_deg": 0.14500478961628005,
+        "rms_error_deg": 0.04997833476233187,
+        "plus_45_error_deg": 0.09291640669511025,
+        "minus_45_error_deg": -0.09291640669508183,
+        "minimum_code": 384,
+        "maximum_code": 639
+      },
+      "exact_phase_q6": {
+        "max_abs_error_deg": 0.23694465084935246,
+        "rms_error_deg": 0.08655970241773404,
+        "plus_45_error_deg": -0.05910058542326624,
+        "minus_45_error_deg": 0.05910058542326624,
+        "minimum_code": 384,
+        "maximum_code": 640
+      }
+    },
+    {
+      "gain_code": 96,
+      "gain": 0.375,
+      "legacy": {
+        "max_abs_error_deg": 0.19682375369177407,
+        "rms_error_deg": 0.07016855078400504,
+        "plus_45_error_deg": 0.14349730528175542,
+        "minus_45_error_deg": -0.14349730528175542,
+        "minimum_code": 320,
+        "maximum_code": 703
+      },
+      "exact_phase_q6": {
+        "max_abs_error_deg": 0.14944300678595823,
+        "rms_error_deg": 0.05437049537958248,
+        "plus_45_error_deg": -0.05910058542326624,
+        "minus_45_error_deg": 0.05910058542326624,
+        "minimum_code": 320,
+        "maximum_code": 704
+      }
+    },
+    {
+      "gain_code": 128,
+      "gain": 0.5,
+      "legacy": {
+        "max_abs_error_deg": 0.14500478961628005,
+        "rms_error_deg": 0.049978412906176294,
+        "plus_45_error_deg": 0.09291640669511025,
+        "minus_45_error_deg": -0.09291640669511025,
+        "minimum_code": 256,
+        "maximum_code": 767
+      },
+      "exact_phase_q6": {
+        "max_abs_error_deg": 0.11720190909912276,
+        "rms_error_deg": 0.040894217865698045,
+        "plus_45_error_deg": 0.004371964432692721,
+        "minus_45_error_deg": -0.004371964432692721,
+        "minimum_code": 256,
+        "maximum_code": 768
+      }
+    },
+    {
+      "gain_code": 192,
+      "gain": 0.75,
+      "legacy": {
+        "max_abs_error_deg": 0.12751698238361087,
+        "rms_error_deg": 0.04468516942161422,
+        "plus_45_error_deg": 0.08450750641699756,
+        "minus_45_error_deg": -0.08450750641702598,
+        "minimum_code": 128,
+        "maximum_code": 894
+      },
+      "exact_phase_q6": {
+        "max_abs_error_deg": 0.070204480828437,
+        "rms_error_deg": 0.026092358224951036,
+        "plus_45_error_deg": 0.019733253396367445,
+        "minus_45_error_deg": -0.019733253396339023,
+        "minimum_code": 129,
+        "maximum_code": 895
+      }
+    },
+    {
+      "gain_code": 256,
+      "gain": 1.0,
+      "legacy": {
+        "max_abs_error_deg": 0.07770054592356246,
+        "rms_error_deg": 0.03376962418084418,
+        "plus_45_error_deg": 0.04864963351056417,
+        "minus_45_error_deg": -0.04864963351056417,
+        "minimum_code": 0,
+        "maximum_code": 1022
+      },
+      "exact_phase_q6": {
+        "max_abs_error_deg": 0.05183451599265254,
+        "rms_error_deg": 0.019253384215997926,
+        "plus_45_error_deg": 3.719135438018384e-05,
+        "minus_45_error_deg": -3.719135438018384e-05,
+        "minimum_code": 1,
+        "maximum_code": 1023
+      }
+    }
+  ],
+  "status": "DAC_NUMERIC_PASS"
+}

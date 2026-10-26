@@ -1,0 +1,6 @@
+# Preserve exact bytes: manifests also hash text and hardware source files.
+* -text
+*.bit binary
+*.npz binary
+*.png binary
+*.pdf binary

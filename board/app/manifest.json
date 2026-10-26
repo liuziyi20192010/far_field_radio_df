@@ -1,0 +1,42 @@
+{
+  "phase_measure.py": {
+    "bytes": 23293,
+    "sha256": "5e0feedbd7ca1f69dd7a68971a3b08d7f3aa19cc13cc903015bc47f71cea1e49"
+  },
+  "dashboard.py": {
+    "bytes": 36482,
+    "sha256": "d341187fc59fda12e14874717defaaaab41ec6c9b84c3186d5eec27d5ffb3893"
+  },
+  "far_field_radio_df.ipynb": {
+    "bytes": 2154,
+    "sha256": "dfc1767bc31dc29bf319eedfd6ae597423b57305bb886b7e38049265aedbe54f"
+  },
+  "overlay/far_field_radio_df.bit": {
+    "bytes": 4045674,
+    "sha256": "a39ae8f72cb3f3d6ce5f8182bf7d9661616db95cbe020932db435275a3b9df4c"
+  },
+  "overlay/far_field_radio_df.hwh": {
+    "bytes": 520237,
+    "sha256": "515ed851c1dd2baa895d23beef4ab27978b104a6373403e4cf6187e80ebc1619"
+  },
+  "profile_pynq.py": {
+    "bytes": 16046,
+    "sha256": "242ec075ea0fb0c2d597174d1a07c03b226a3e972e79da559beac0b3570dbc61"
+  },
+  "build_info.json": {
+    "bytes": 1291,
+    "sha256": "2f0d1fa5b2f465ef668e824256bfab453bc94bb91da9fb7826d485d9be1e7d60"
+  },
+  "readme.md": {
+    "bytes": 6628,
+    "sha256": "54f494318c7991e80eac3f6b251ed58ee82ac22e9e6f3261b25f1d2fc81307c9"
+  },
+  "license": {
+    "bytes": 1088,
+    "sha256": "bcfda3aefba3c447f0cf2dbb85ebd9e32bb6b1d7b8f4c90d4c2037689195c3ff"
+  },
+  "third_party_notices.md": {
+    "bytes": 2209,
+    "sha256": "ddc5d128c6b31eac3c3675bdad0eff74f08694a532ba5d47fed49d2cd3416bac"
+  }
+}

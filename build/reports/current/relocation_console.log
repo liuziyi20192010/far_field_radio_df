@@ -1,0 +1,25 @@
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'D:/Xilinx/Vivado/2020.2/scripts/Vivado_init.tcl'
+SynthPilot Server: Ready on port 9999
+source {E:\PYNQ\fpgachina\far_field_radio_df\build\scripts\audit_project.tcl}
+# set root [file normalize [file join [file dirname [info script]] .. ..]]
+# open_project [file join $root build work vivado phase_measure phase_measure.xpr]
+INFO: [Project 1-313] Project file moved from 'E:/PYNQ/fpgachina/phase_measure_submission/build/work/vivado/phase_measure' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+# foreach source [get_files -all] {
+#     set path [get_property NAME $source]
+#     if {![file exists $path]} {error "Project source missing after relocation: $path"}
+# }
+# puts "RELOCATED_PROJECT_PASS"
+RELOCATED_PROJECT_PASS
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 13:20:48 2026...

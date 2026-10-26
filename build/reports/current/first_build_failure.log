@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 11 13:03:33 2026
+# Process ID: 17844
+# Current directory: E:/PYNQ/fpgachina/phase_measure_submission/build/work
+# Command line: vivado.exe -mode batch -source E:\PYNQ\fpgachina\phase_measure_submission\build\scripts\build.tcl -log E:\PYNQ\fpgachina\phase_measure_submission\build\reports\current\build.log -journal E:\PYNQ\fpgachina\phase_measure_submission\build\work\build.jou
+# Log file: E:/PYNQ/fpgachina/phase_measure_submission/build/reports/current/build.log
+# Journal file: E:\PYNQ\fpgachina\phase_measure_submission\build\work\build.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2020.2/scripts/Vivado_init.tcl'
+SynthPilot Server: Ready on port 9999
+source {E:\PYNQ\fpgachina\phase_measure_submission\build\scripts\build.tcl}
+# set root [file normalize [file join [file dirname [info script]] .. ..]]
+# file mkdir [file join $root build work logs]
+# open_project [file join $root build work vivado phase_measure phase_measure.xpr]
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+# open_bd_design [get_files system.bd]
+Reading block design file <E:/PYNQ/fpgachina/phase_measure_submission/build/work/vivado/phase_measure/phase_measure.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:module_ref:adc_capture:1.0 - adc_capture_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - adc_clk_wiz
+Adding component instance block -- xilinx.com:module_ref:adc_status_sync:1.0 - adc_status_sync_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - const_zero
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - reset_and
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_adc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_dac
+Adding component instance block -- xilinx.com:module_ref:dac_control:1.0 - dac_control_0
+Adding component instance block -- xilinx.com:module_ref:dac_ack_sync:1.0 - dac_ack_sync_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - dac_gpio
+Successfully read diagram <system> from block design file <E:/PYNQ/fpgachina/phase_measure_submission/build/work/vivado/phase_measure/phase_measure.srcs/sources_1/bd/system/system.bd>
+# foreach name {dac_clk_wiz_locked dac_clk_wiz_clk_out1} {
+#     set net [get_bd_nets -quiet $name]
+#     if {[llength $net] && ![llength [get_bd_pins -quiet -of_objects $net]]} {delete_bd_objs $net}
+# }
+# validate_bd_design
+INFO: [BD 5-320] Validate design is not run, since the design is already validated.
+# save_bd_design
+# generate_target all [get_files system.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'system' - hence not re-generating.
+# write_bd_tcl -force [file join $root build scripts phase_measure_bd.tcl]
+INFO: [BD 5-148] Tcl file written out <E:/PYNQ/fpgachina/phase_measure_submission/build/scripts/phase_measure_bd.tcl>.
+
+# update_compile_order -fileset sources_1
+# foreach name {system_adc_capture_0_0_synth_1 system_adc_status_sync_0_0_synth_1 system_dac_control_0_0_synth_1 system_dac_ack_sync_0_0_synth_1} {
+#     reset_run $name
+# }
+WARNING: [Vivado 12-821] No runs matched 'system_adc_capture_0_0_synth_1'
+ERROR: [Common 17-162] Invalid option value specified for '-runs'.
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 13:03:45 2026...

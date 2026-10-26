@@ -1,0 +1,12 @@
+column,unit,meaning
+timestamp_utc,iso8601,measurement time
+mode,text,dac or external
+reference_deg,degree,quantized DAC setting or externally set known phase
+raw_pl_deg,degree,uncalibrated CORDIC CH2-CH1
+software_deg,degree,same frame CPU DFT reference
+calibrated_deg,degree,raw phase minus zero calibration
+reference_error_deg,degree,circular calibrated minus reference
+pl_software_error_deg,degree,circular PL minus same frame software
+capture_s,second,capture plus decode and allocation
+cpu_dft_s,second,independent CPU reference computation
+pl_word_decode_s,second,host conversion only
